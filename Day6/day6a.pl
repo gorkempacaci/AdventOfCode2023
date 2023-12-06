@@ -18,7 +18,7 @@ main :-
   foldl([X,Y,Z]>>(Z is X*Y), NumsOfSolutions, 1, P),
   writeln(P).
 
-% succeeds when there are N possible integer times to reach the distance under time T.
+% succeeds when there are N possible integer waiting durations to reach the distance under time T.
 sols(T, D, N) :-
   W #> 0, W #< T,
   Da #= (T-W)*W,
