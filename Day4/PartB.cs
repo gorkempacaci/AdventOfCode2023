@@ -9,7 +9,6 @@ namespace Day4
     {
       string[] lines = File.ReadAllLines("input.txt");
 
-      List<int> wins = new();
       long totalExtraCards = 0;
       long[] extras = new long[lines.Length];
 
